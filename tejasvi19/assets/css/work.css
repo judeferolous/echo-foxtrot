@@ -1,0 +1,96 @@
+.works .works_control {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.works .works_control button {
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: transparent;
+  opacity: 0.75;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 2px #fff;
+}
+.works .works_control button.mixitup-control-active,
+.works .works_control button:hover {
+  border-color: #00deff;
+  box-shadow: 0 0 2px #00deff;
+  opacity: 1;
+}
+.works .works_content .mix {
+  margin-bottom: 30px;
+}
+.works .works_content .mix .work_item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.works .works_content .mix .work_item img {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+}
+.works .works_content .mix .work_item .item_caption {
+  position: absolute;
+  display: block;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.works .works_content .mix .work_item .item_caption a {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  left: calc(50% - 45px);
+  background-color: transparent;
+}
+.works .works_content .mix .work_item .item_caption .popup {
+  right: calc(50% - 45px);
+  left: auto;
+  cursor: zoom-in;
+}
+.works .works_content .mix .work_item .item_caption i {
+  padding: 10px 9px 8px 8px;
+  box-shadow: 0 0 3px #fff;
+  color: #00deff;
+  font-size: 1.5em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.works .works_content .mix .work_item .item_caption .popup i {
+  padding: 9px;
+}
+.works .works_content .mix .work_item:hover img {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(2, 1.1);
+  transform: scale(2, 1.1);
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+}
+.works .works_content .mix .work_item .item_caption a:hover i,
+.works .works_content .mix .work_item .item_caption button:hover i {
+  background-color: #fff;
+  color: #000;
+}
+.works .works_content .mix .work_item:hover .item_caption {
+  opacity: 1;
+}
+.mfp-arrow-left::before,
+.mfp-arrow-right::before {
+  border-left-width: 0;
+  border-right-width: 0;
+}
